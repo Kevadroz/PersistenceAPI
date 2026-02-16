@@ -15,7 +15,8 @@ void PADynamicObjectAction::save(Stream& o_stream) {
 }
 
 inline void persistenceAPI::operator>>(Stream& i_stream, PADynamicObjectAction& o_value) {
-    i_stream >> o_value.m_gameObject1;
+    GameObject* gameObject1 = static_cast<GameObject*>(o_value.m_gameObject1);
+    i_stream >> gameObject1;
     SEPARATOR_I
     i_stream >> o_value.m_gameObject2;
     SEPARATOR_I
@@ -46,11 +47,11 @@ inline void persistenceAPI::operator>>(Stream& i_stream, PADynamicObjectAction& 
         SEPARATOR_I
         i_stream >> o_value.m_unkBool4;
         SEPARATOR_I
-        i_stream >> o_value.m_unkFloat4;
+        i_stream >> o_value.m_controlID;
         SEPARATOR_I
-        i_stream >> o_value.m_unkFloat5;
+        i_stream >> o_value.m_targetGroupID;
         SEPARATOR_I
-        i_stream >> o_value.m_unkFloat6;
+        i_stream >> o_value.m_centerGroupID;
     } else {
         i_stream.read(reinterpret_cast<char*>(&o_value) + offsetof(PADynamicObjectAction,m_gameObject8) + sizeof(GameObject*), 32);
     }
@@ -58,7 +59,8 @@ inline void persistenceAPI::operator>>(Stream& i_stream, PADynamicObjectAction& 
 }
 
 inline void persistenceAPI::operator<<(Stream& o_stream, PADynamicObjectAction& i_value) {
-    o_stream << i_value.m_gameObject1;
+    GameObject* gameObject1 = static_cast<GameObject*>(i_value.m_gameObject1);
+    o_stream << gameObject1;
     SEPARATOR_O
     o_stream << i_value.m_gameObject2;
     SEPARATOR_O
@@ -88,11 +90,11 @@ inline void persistenceAPI::operator<<(Stream& o_stream, PADynamicObjectAction& 
     SEPARATOR_O
     o_stream << i_value.m_unkBool4;
     SEPARATOR_O
-    o_stream << i_value.m_unkFloat4;
+    o_stream << i_value.m_controlID;
     SEPARATOR_O
-    o_stream << i_value.m_unkFloat5;
+    o_stream << i_value.m_targetGroupID;
     SEPARATOR_O
-    o_stream << i_value.m_unkFloat6;
+    o_stream << i_value.m_centerGroupID;
     SEPARATOR_O
 }
 
@@ -170,8 +172,8 @@ void PADynamicObjectAction::describe() {
     log::info("[PADynamicObjectAction - describe] m_unkBool2: {}", m_unkBool2);
     log::info("[PADynamicObjectAction - describe] m_unkBool3: {}", m_unkBool3);
     log::info("[PADynamicObjectAction - describe] m_unkBool4: {}", m_unkBool4);
-    log::info("[PADynamicObjectAction - describe] m_unkFloat4: {}", m_unkFloat4);
-    log::info("[PADynamicObjectAction - describe] m_unkFloat5: {}", m_unkFloat5);
-    log::info("[PADynamicObjectAction - describe] m_unkFloat6: {}", m_unkFloat6);
+    log::info("[PADynamicObjectAction - describe] m_controlID: {}", m_controlID);
+    log::info("[PADynamicObjectAction - describe] m_targetGroupID: {}", m_targetGroupID);
+    log::info("[PADynamicObjectAction - describe] m_centerGroupID: {}", m_centerGroupID);
 }
 #endif
