@@ -456,11 +456,11 @@ inline void persistenceAPI::operator<<(Stream& o_stream, PAPlayerCheckpoint& i_v
     SEPARATOR_O
     o_stream << i_value.m_maybeReverseSpeed;
     SEPARATOR_O
-    o_stream >> i_value.m_jumpBuffered;
+    o_stream << i_value.m_jumpBuffered;
     SEPARATOR_O
     o_stream << i_value.m_isDashing;
     SEPARATOR_O
-    o_stream >> i_value.m_dashStartTimeold;
+    o_stream << i_value.m_dashStartTimeold;
     SEPARATOR_O
     o_stream << i_value.m_dashX;
     SEPARATOR_O
@@ -478,11 +478,11 @@ inline void persistenceAPI::operator<<(Stream& o_stream, PAPlayerCheckpoint& i_v
     SEPARATOR_O
     o_stream << i_value.m_gravityMod;
     SEPARATOR_O
-    o_stream >> i_value.m_objectSnappedTo;
+    o_stream << i_value.m_objectSnappedTo;
     SEPARATOR_O
-    o_stream >> i_value.m_snapDistance;
+    o_stream << i_value.m_snapDistance;
     SEPARATOR_O
-    o_stream >> i_value.m_accelerationOrSpeed;
+    o_stream << i_value.m_accelerationOrSpeed;
     SEPARATOR_O
     o_stream << i_value.m_decreaseBoostSlide;
     SEPARATOR_O
@@ -490,205 +490,205 @@ inline void persistenceAPI::operator<<(Stream& o_stream, PAPlayerCheckpoint& i_v
     VEC_SEPARATOR_O
     o_stream << i_value.m_playerFollowFloats;
     VEC_SEPARATOR_O
-    o_stream >> i_value.m_unk838;
+    o_stream << i_value.m_unk838;
     SEPARATOR_O
-    o_stream >> i_value.m_isOnSlope;
+    o_stream << i_value.m_isOnSlope;
     SEPARATOR_O
-    o_stream >> i_value.m_wasOnSlope;
+    o_stream << i_value.m_wasOnSlope;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeVelocity;
+    o_stream << i_value.m_slopeVelocity;
     SEPARATOR_O
-    o_stream >> i_value.m_rotation;
+    o_stream << i_value.m_rotation;
     SEPARATOR_O
-    o_stream >> i_value.m_wasTeleported;
+    o_stream << i_value.m_wasTeleported;
     SEPARATOR_O
-    o_stream >> i_value.m_fixGravityBug;
+    o_stream << i_value.m_fixGravityBug;
     SEPARATOR_O
-    o_stream >> i_value.m_reverseSync;
+    o_stream << i_value.m_reverseSync;
     SEPARATOR_O
-    o_stream >> i_value.m_yVelocityBeforeSlope;
+    o_stream << i_value.m_yVelocityBeforeSlope;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeStartTime;
+    o_stream << i_value.m_slopeStartTime;
     SEPARATOR_O
-    o_stream >> i_value.m_justPlacedStreak;
+    o_stream << i_value.m_justPlacedStreak;
     SEPARATOR_O
-    o_stream >> i_value.m_lastCollisionBottom;
+    o_stream << i_value.m_lastCollisionBottom;
     SEPARATOR_O
-    o_stream >> i_value.m_lastCollisionTop;
+    o_stream << i_value.m_lastCollisionTop;
     SEPARATOR_O
-    o_stream >> i_value.m_lastCollisionLeft;
+    o_stream << i_value.m_lastCollisionLeft;
     SEPARATOR_O
-    o_stream >> i_value.m_lastCollisionRight;
+    o_stream << i_value.m_lastCollisionRight;
     SEPARATOR_O
-    o_stream >> i_value.m_unk50C;
+    o_stream << i_value.m_unk50C;
     SEPARATOR_O
-    o_stream >> i_value.m_unk510;
+    o_stream << i_value.m_unk510;
     SEPARATOR_O
-    o_stream >> i_value.m_currentSlope2;
+    o_stream << i_value.m_currentSlope2;
     SEPARATOR_O
-    o_stream >> i_value.m_preLastGroundObject;
+    o_stream << i_value.m_preLastGroundObject;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeAngle;
+    o_stream << i_value.m_slopeAngle;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeSlidingMaybeRotated;
+    o_stream << i_value.m_slopeSlidingMaybeRotated;
     SEPARATOR_O
-    o_stream >> i_value.m_quickCheckpointMode;
+    o_stream << i_value.m_quickCheckpointMode;
     SEPARATOR_O
-    o_stream >> i_value.m_collidedObject;
+    o_stream << i_value.m_collidedObject;
     SEPARATOR_O
-    o_stream >> i_value.m_lastGroundObject;
+    o_stream << i_value.m_lastGroundObject;
     SEPARATOR_O
-    o_stream >> i_value.m_collidingWithLeft;
+    o_stream << i_value.m_collidingWithLeft;
     SEPARATOR_O
-    o_stream >> i_value.m_collidingWithRight;
+    o_stream << i_value.m_collidingWithRight;
     SEPARATOR_O
-    o_stream >> i_value.m_scaleXRelated2;
+    o_stream << i_value.m_scaleXRelated2;
     SEPARATOR_O
-    o_stream >> i_value.m_groundYVelocity;
+    o_stream << i_value.m_groundYVelocity;
     SEPARATOR_O
-    o_stream >> i_value.m_yVelocityRelated;
+    o_stream << i_value.m_yVelocityRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_scaleXRelated3;
+    o_stream << i_value.m_scaleXRelated3;
     SEPARATOR_O
-    o_stream >> i_value.m_scaleXRelated4;
+    o_stream << i_value.m_scaleXRelated4;
     SEPARATOR_O
-    o_stream >> i_value.m_scaleXRelated5;
+    o_stream << i_value.m_scaleXRelated5;
     SEPARATOR_O
-    o_stream >> i_value.m_isCollidingWithSlope;
+    o_stream << i_value.m_isCollidingWithSlope;
     SEPARATOR_O
-    o_stream >> i_value.m_isBallRotating;
+    o_stream << i_value.m_isBallRotating;
     SEPARATOR_O
-    o_stream >> i_value.m_unk669;
+    o_stream << i_value.m_unk669;
     SEPARATOR_O
-    o_stream >> i_value.m_currentPotentialSlope;
+    o_stream << i_value.m_currentPotentialSlope;
     SEPARATOR_O
-    o_stream >> i_value.m_currentSlope;
+    o_stream << i_value.m_currentSlope;
     SEPARATOR_O
-    o_stream >> i_value.unk_584;
+    o_stream << i_value.unk_584;
     SEPARATOR_O
-    o_stream >> i_value.m_collidingWithSlopeId;
+    o_stream << i_value.m_collidingWithSlopeId;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeFlipGravityRelated;
+    o_stream << i_value.m_slopeFlipGravityRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeAngleRadians;
+    o_stream << i_value.m_slopeAngleRadians;
     SEPARATOR_O
-    o_stream >> i_value.m_rotationSpeed;
+    o_stream << i_value.m_rotationSpeed;
     SEPARATOR_O
-    o_stream >> i_value.m_rotateSpeed;
+    o_stream << i_value.m_rotateSpeed;
     SEPARATOR_O
-    o_stream >> i_value.m_isRotating;
+    o_stream << i_value.m_isRotating;
     SEPARATOR_O
-    o_stream >> i_value.m_isBallRotating2;
+    o_stream << i_value.m_isBallRotating2;
     SEPARATOR_O
-    o_stream >> i_value.m_speedMultiplier;
+    o_stream << i_value.m_speedMultiplier;
     SEPARATOR_O
-    o_stream >> i_value.m_yStart;
+    o_stream << i_value.m_yStart;
     SEPARATOR_O
-    o_stream >> i_value.m_gravity;
+    o_stream << i_value.m_gravity;
     SEPARATOR_O
-    o_stream >> i_value.m_trailingParticleLife;
+    o_stream << i_value.m_trailingParticleLife;
     SEPARATOR_O
-    o_stream >> i_value.m_gameModeChangedTime;
+    o_stream << i_value.m_gameModeChangedTime;
     SEPARATOR_O
-    o_stream >> i_value.m_padRingRelated;
+    o_stream << i_value.m_padRingRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeIsFalling;
+    o_stream << i_value.m_maybeIsFalling;
     SEPARATOR_O
-    o_stream >> i_value.m_shouldTryPlacingCheckpoint;
+    o_stream << i_value.m_shouldTryPlacingCheckpoint;
     SEPARATOR_O
-    o_stream >> i_value.m_playEffects;
+    o_stream << i_value.m_playEffects;
     SEPARATOR_O
-    o_stream >> i_value.m_isOnGround3;
+    o_stream << i_value.m_isOnGround3;
     SEPARATOR_O
-    o_stream >> i_value.m_lastSpiderFlipTime;
+    o_stream << i_value.m_lastSpiderFlipTime;
     SEPARATOR_O
-    o_stream >> i_value.m_unkBool5;
+    o_stream << i_value.m_unkBool5;
     SEPARATOR_O
-    o_stream >> i_value.m_ringJumpRelated;
+    o_stream << i_value.m_ringJumpRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_ringRelatedSet;
+    o_stream << i_value.m_ringRelatedSet;
     USET_SEPARATOR_O
-    o_stream >> i_value.m_maybeSpriteRelated;
+    o_stream << i_value.m_maybeSpriteRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_landParticlesAngle;
+    o_stream << i_value.m_landParticlesAngle;
     SEPARATOR_O
-    o_stream >> i_value.m_landParticleRelatedY;
+    o_stream << i_value.m_landParticleRelatedY;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeRotation;
+    o_stream << i_value.m_slopeRotation;
     SEPARATOR_O
-    o_stream >> i_value.m_currentSlopeYVelocity;
+    o_stream << i_value.m_currentSlopeYVelocity;
     SEPARATOR_O
-    o_stream >> i_value.m_unk3d0;
+    o_stream << i_value.m_unk3d0;
     SEPARATOR_O
-    o_stream >> i_value.m_blackOrbRelated;
+    o_stream << i_value.m_blackOrbRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_unk3e0;
+    o_stream << i_value.m_unk3e0;
     SEPARATOR_O
-    o_stream >> i_value.m_unk3e1;
+    o_stream << i_value.m_unk3e1;
     SEPARATOR_O
-    o_stream >> i_value.m_isAccelerating;
+    o_stream << i_value.m_isAccelerating;
     SEPARATOR_O
-    o_stream >> i_value.m_isCurrentSlopeTop;
+    o_stream << i_value.m_isCurrentSlopeTop;
     SEPARATOR_O
-    o_stream >> i_value.m_collidedTopMinY;
+    o_stream << i_value.m_collidedTopMinY;
     SEPARATOR_O
-    o_stream >> i_value.m_collidedBottomMaxY;
+    o_stream << i_value.m_collidedBottomMaxY;
     SEPARATOR_O
-    o_stream >> i_value.m_collidedLeftMaxX;
+    o_stream << i_value.m_collidedLeftMaxX;
     SEPARATOR_O
-    o_stream >> i_value.m_collidedRightMinX;
+    o_stream << i_value.m_collidedRightMinX;
     SEPARATOR_O
-    o_stream >> i_value.m_wasJumpBuffered;
+    o_stream << i_value.m_wasJumpBuffered;
     SEPARATOR_O
-    o_stream >> i_value.m_wasRobotJump;
+    o_stream << i_value.m_wasRobotJump;
     SEPARATOR_O
-    o_stream >> i_value.m_stateJumpBuffered;
+    o_stream << i_value.m_stateJumpBuffered;
     SEPARATOR_O
-    o_stream >> i_value.m_stateRingJump2;
+    o_stream << i_value.m_stateRingJump2;
     SEPARATOR_O
-    o_stream >> i_value.m_touchedRing;
+    o_stream << i_value.m_touchedRing;
     SEPARATOR_O
-    o_stream >> i_value.m_touchedCustomRing;
+    o_stream << i_value.m_touchedCustomRing;
     SEPARATOR_O
-    o_stream >> i_value.m_touchedGravityPortal;
+    o_stream << i_value.m_touchedGravityPortal;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeTouchedBreakableBlock;
+    o_stream << i_value.m_maybeTouchedBreakableBlock;
     SEPARATOR_O
-    o_stream >> i_value.m_touchedPad;
+    o_stream << i_value.m_touchedPad;
     SEPARATOR_O
-    o_stream >> i_value.m_yVelocity;
+    o_stream << i_value.m_yVelocity;
     SEPARATOR_O
-    o_stream >> i_value.m_fallSpeed;
+    o_stream << i_value.m_fallSpeed;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeUpsideDownSlope;
+    o_stream << i_value.m_maybeUpsideDownSlope;
     SEPARATOR_O
-    o_stream >> i_value.m_reverseRelated;
+    o_stream << i_value.m_reverseRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeReverseAcceleration;
+    o_stream << i_value.m_maybeReverseAcceleration;
     SEPARATOR_O
-    o_stream >> i_value.m_xVelocityRelated2;
+    o_stream << i_value.m_xVelocityRelated2;
     SEPARATOR_O
-    o_stream >> i_value.m_shipRotation;
+    o_stream << i_value.m_shipRotation;
     SEPARATOR_O
-    o_stream >> i_value.m_lastPortalPos;
+    o_stream << i_value.m_lastPortalPos;
     SEPARATOR_O
-    o_stream >> i_value.m_unkUnused3;
+    o_stream << i_value.m_unkUnused3;
     SEPARATOR_O
-    o_stream >> i_value.m_isOnGround2;
+    o_stream << i_value.m_isOnGround2;
     SEPARATOR_O
-    o_stream >> i_value.m_lastLandTime;
+    o_stream << i_value.m_lastLandTime;
     SEPARATOR_O
-    o_stream >> i_value.m_platformerVelocityRelated;
+    o_stream << i_value.m_platformerVelocityRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeIsBoosted;
+    o_stream << i_value.m_maybeIsBoosted;
     SEPARATOR_O
-    o_stream >> i_value.m_scaleXRelatedTime;
+    o_stream << i_value.m_scaleXRelatedTime;
     SEPARATOR_O
-    o_stream >> i_value.m_isLocked;
+    o_stream << i_value.m_isLocked;
     SEPARATOR_O
-    o_stream >> i_value.m_controlsDisabled;
+    o_stream << i_value.m_controlsDisabled;
     SEPARATOR_O
-    o_stream >> i_value.m_lastGroundedPos;
+    o_stream << i_value.m_lastGroundedPos;
     SEPARATOR_O
     bool l_hasTouchingRingsArray = false;
     if (i_value.m_touchingRings) {
@@ -700,101 +700,101 @@ inline void persistenceAPI::operator<<(Stream& o_stream, PAPlayerCheckpoint& i_v
         static_cast<PACCArray*>(i_value.m_touchingRings)->save<GameObject>(o_stream);
         ARR_SEPARATOR_O
     }
-    o_stream >> i_value.m_touchedRings;
+    o_stream << i_value.m_touchedRings;
     USET_SEPARATOR_O
-    o_stream >> i_value.m_lastActivatedPortal;
+    o_stream << i_value.m_lastActivatedPortal;
     SEPARATOR_O
-    o_stream >> i_value.m_totalTime;
+    o_stream << i_value.m_totalTime;
     SEPARATOR_O
-    o_stream >> i_value.m_yVelocityRelated3;
+    o_stream << i_value.m_yVelocityRelated3;
     SEPARATOR_O
-    o_stream >> i_value.m_defaultMiniIcon;
+    o_stream << i_value.m_defaultMiniIcon;
     SEPARATOR_O
-    o_stream >> i_value.m_swapColors;
+    o_stream << i_value.m_swapColors;
     SEPARATOR_O
-    o_stream >> i_value.m_switchDashFireColor;
+    o_stream << i_value.m_switchDashFireColor;
     SEPARATOR_O
-    o_stream >> i_value.m_stateOnGround;
+    o_stream << i_value.m_stateOnGround;
     SEPARATOR_O
-    o_stream >> i_value.m_stateUnk;
+    o_stream << i_value.m_stateUnk;
     SEPARATOR_O
-    o_stream >> i_value.m_stateNoStickX;
+    o_stream << i_value.m_stateNoStickX;
     SEPARATOR_O
-    o_stream >> i_value.m_stateNoStickY;
+    o_stream << i_value.m_stateNoStickY;
     SEPARATOR_O
-    o_stream >> i_value.m_stateUnk2;
+    o_stream << i_value.m_stateUnk2;
     SEPARATOR_O
-    o_stream >> i_value.m_stateBoostX;
+    o_stream << i_value.m_stateBoostX;
     SEPARATOR_O
-    o_stream >> i_value.m_stateBoostY;
+    o_stream << i_value.m_stateBoostY;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeStateForce2;
+    o_stream << i_value.m_maybeStateForce2;
     SEPARATOR_O
-    o_stream >> i_value.m_stateScale;
+    o_stream << i_value.m_stateScale;
     SEPARATOR_O
-    o_stream >> i_value.m_platformerXVelocity;
+    o_stream << i_value.m_platformerXVelocity;
     SEPARATOR_O
-    o_stream >> i_value.m_holdingRight;
+    o_stream << i_value.m_holdingRight;
     SEPARATOR_O
-    o_stream >> i_value.m_holdingLeft;
+    o_stream << i_value.m_holdingLeft;
     SEPARATOR_O
-    o_stream >> i_value.m_leftPressedFirst;
+    o_stream << i_value.m_leftPressedFirst;
     SEPARATOR_O
-    o_stream >> i_value.m_scaleXRelated;
+    o_stream << i_value.m_scaleXRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeHasStopped;
+    o_stream << i_value.m_maybeHasStopped;
     SEPARATOR_O
-    o_stream >> i_value.m_xVelocityRelated;
+    o_stream << i_value.m_xVelocityRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeGoingCorrectSlopeDirection;
+    o_stream << i_value.m_maybeGoingCorrectSlopeDirection;
     SEPARATOR_O
-    o_stream >> i_value.m_isSliding;
+    o_stream << i_value.m_isSliding;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeSlopeForce;
+    o_stream << i_value.m_maybeSlopeForce;
     SEPARATOR_O
-    o_stream >> i_value.m_isOnIce;
+    o_stream << i_value.m_isOnIce;
     SEPARATOR_O
-    o_stream >> i_value.m_physDeltaRelated;
+    o_stream << i_value.m_physDeltaRelated;
     SEPARATOR_O
-    o_stream >> i_value.m_isOnGround4;
+    o_stream << i_value.m_isOnGround4;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeSlidingTime;
+    o_stream << i_value.m_maybeSlidingTime;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeSlidingStartTime;
+    o_stream << i_value.m_maybeSlidingStartTime;
     SEPARATOR_O
-    o_stream >> i_value.m_changedDirectionsTime;
+    o_stream << i_value.m_changedDirectionsTime;
     SEPARATOR_O
-    o_stream >> i_value.m_slopeEndTime;
+    o_stream << i_value.m_slopeEndTime;
     SEPARATOR_O
-    o_stream >> i_value.m_isMoving;
+    o_stream << i_value.m_isMoving;
     SEPARATOR_O
-    o_stream >> i_value.m_platformerMovingLeft;
+    o_stream << i_value.m_platformerMovingLeft;
     SEPARATOR_O
-    o_stream >> i_value.m_platformerMovingRight;
+    o_stream << i_value.m_platformerMovingRight;
     SEPARATOR_O
-    o_stream >> i_value.m_isSlidingRight;
+    o_stream << i_value.m_isSlidingRight;
     SEPARATOR_O
-    o_stream >> i_value.m_maybeChangedDirectionAngle;
+    o_stream << i_value.m_maybeChangedDirectionAngle;
     SEPARATOR_O
-    o_stream >> i_value.m_unkUnused2;
+    o_stream << i_value.m_unkUnused2;
     SEPARATOR_O
-    o_stream >> i_value.m_stateNoAutoJump;
+    o_stream << i_value.m_stateNoAutoJump;
     SEPARATOR_O
-    o_stream >> i_value.m_stateDartSlide;
+    o_stream << i_value.m_stateDartSlide;
     SEPARATOR_O
-    o_stream >> i_value.m_stateHitHead;
+    o_stream << i_value.m_stateHitHead;
     SEPARATOR_O
-    o_stream >> i_value.m_stateFlipGravity;
+    o_stream << i_value.m_stateFlipGravity;
     SEPARATOR_O
-    o_stream >> i_value.m_stateForce;
+    o_stream << i_value.m_stateForce;
     SEPARATOR_O
-    o_stream >> i_value.m_stateForceVector;
+    o_stream << i_value.m_stateForceVector;
     SEPARATOR_O
-    o_stream >> i_value.m_affectedByForces;
+    o_stream << i_value.m_affectedByForces;
     SEPARATOR_O
-    o_stream >> i_value.m_jumpPadRelated;
+    o_stream << i_value.m_jumpPadRelated;
     MAP_SEPARATOR_O
-    o_stream >> i_value.m_fallStartY;
+    o_stream << i_value.m_fallStartY;
     SEPARATOR_O
 }
 
